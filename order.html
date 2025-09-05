@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DEFOUNDJE — Clean Look</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header container">
+  <a href="index.html" class="brand">𝗗𝗘𝗙𝗢𝗨𝗡𝗗𝗝𝗘</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="orders.html">Riwayat</a>
+    <a href="cart.html">Keranjang</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+<main class="container">
+
+<h1>Detail Pesanan</h1>
+<div style="display:flex;gap:12px;align-items:center;justify-content:space-between">
+  <div><strong>ID Pesanan</strong> <div id="order-id" style="font-size:18px;margin-top:6px"></div></div>
+  <div style="text-align:right"><div class="meta">Nama: <span id="order-customer"></span></div><div style="font-weight:700;margin-top:6px">Total: <span id="order-total"></span></div></div>
+</div>
+
+<div id="tracker" class="tracker" style="margin-top:20px"></div>
+
+<section style="margin-top:18px">
+  <h3>Ringkasan Barang</h3>
+  <div id="order-items"></div>
+</section>
+
+<div style="margin-top:18px">
+  <a class="btn" href="index.html">Kembali ke Home</a>
+  <a class="btn secondary" href="orders.html" style="margin-left:8px">Riwayat Pesanan</a>
+</div>
+<script>
+// render items in summary (simple)
+let id=localStorage.getItem('dfj_current_order');
+if(id){let orders=JSON.parse(localStorage.getItem('dfj_orders')||'[]');let order=orders.find(o=>o.id===id);if(order){let wrap=document.getElementById('order-items');order.items.forEach(it=>{wrap.insertAdjacentHTML('beforeend',`<div style="display:flex;gap:12px;align-items:center;margin-bottom:8px"><img src="${it.img}" style="width:80px;height:60px;object-fit:cover;border-radius:8px"/><div><strong>${it.name}</strong><div class="meta">Rp${(it.price).toLocaleString()} • qty ${it.qty}</div></div></div>`)} )}};
+</script>
+
+</main>
+<footer class="site-footer container">
+  © 2025 DEFOUNDJE — Clean Look • Email: halo@defoundje.com
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

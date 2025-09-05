@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DEFOUNDJE — Clean Look</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header container">
+  <a href="index.html" class="brand">𝗗𝗘𝗙𝗢𝗨𝗡𝗗𝗝𝗘</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="orders.html">Riwayat</a>
+    <a href="cart.html">Keranjang</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+<main class="container">
+
+<section class="hero">
+  <div style="display:flex;gap:24px;align-items:center">
+    <div style="flex:1" class="copy">
+      <h1>Clean Look for Every Moment</h1>
+      <p>Simple. Timeless. Effortless.</p>
+      <a class="btn" href="#products">Lihat Koleksi</a>
+    </div>
+    <div style="width:480px"><img src="images/hero.svg" alt="hero" style="width:100%;border-radius:12px"></div>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Koleksi Pilihan</h2>
+  <div class="grid">
+
+<div class="card">
+  <img src="images/product1a..jpg" alt="Essential Tee">
+  <h3>Essential Tee</h3>
+  <div class="meta">Kaos basic unisex, bahan lembut.</div>
+  <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+    <div class="price">Rp149,000</div>
+    <div style="margin-left:auto"><button class="btn" onclick="addToCart('p1','Essential Tee',149000,'images/product1a.svg')">Tambah</button></div>
+  </div>
+  <a style="margin-top:8px;display:inline-block;color:var(--muted);text-decoration:none" href="product_p1.html">Lihat Detail →</a>
+</div>
+
+<div class="card">
+  <img src="images/product2b..jpg" alt="Linen Overshirt">
+  <h3>Linen Overshirt</h3>
+  <div class="meta">Kemeja outer linen, effortless.</div>
+  <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+    <div class="price">Rp279,000</div>
+    <div style="margin-left:auto"><button class="btn" onclick="addToCart('p2','Linen Overshirt',279000,'images/product2b.svg')">Tambah</button></div>
+  </div>
+  <a style="margin-top:8px;display:inline-block;color:var(--muted);text-decoration:none" href="product_p2.html">Lihat Detail →</a>
+</div>
+
+<div class="card">
+  <img src="images/product3c..jpg" alt="Soft Crewneck">
+  <h3>Soft Crewneck</h3>
+  <div class="meta">Sweater ringan, versatile.</div>
+  <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+    <div class="price">Rp329,000</div>
+    <div style="margin-left:auto"><button class="btn" onclick="addToCart('p3','Soft Crewneck',329000,'images/product3c.svg')">Tambah</button></div>
+  </div>
+  <a style="margin-top:8px;display:inline-block;color:var(--muted);text-decoration:none" href="product_p3.html">Lihat Detail →</a>
+</div>
+
+<div class="card">
+  <img src="images/product4d..jpg" alt="Minimal Tote">
+  <h3>Minimal Tote</h3>
+  <div class="meta">Totebag kanvas premium.</div>
+  <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+    <div class="price">Rp189,000</div>
+    <div style="margin-left:auto"><button class="btn" onclick="addToCart('p4','Minimal Tote',189000,'images/product4d.svg')">Tambah</button></div>
+  </div>
+  <a style="margin-top:8px;display:inline-block;color:var(--muted);text-decoration:none" href="product_p4.html">Lihat Detail →</a>
+</div>
+
+<div class="card">
+  <img src="images/product5e..jpg" alt="Classic Cap">
+  <h3>Classic Cap</h3>
+  <div class="meta">Topi minimal dengan strap adjustable.</div>
+  <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+    <div class="price">Rp99,000</div>
+    <div style="margin-left:auto"><button class="btn" onclick="addToCart('p5','Classic Cap',99000,'images/product5e.svg')">Tambah</button></div>
+  </div>
+  <a style="margin-top:8px;display:inline-block;color:var(--muted);text-decoration:none" href="product_p5.html">Lihat Detail →</a>
+</div>
+</div></section>
+</main>
+<footer class="site-footer container">
+  © 2025 DEFOUNDJE — Clean Look • Email: halo@defoundje.com
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

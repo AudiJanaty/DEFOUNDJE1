@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DEFOUNDJE — Clean Look</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header container">
+  <a href="index.html" class="brand">𝗗𝗘𝗙𝗢𝗨𝗡𝗗𝗝𝗘</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="orders.html">Riwayat</a>
+    <a href="cart.html">Keranjang</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+<main class="container">
+
+<h1>Keranjang</h1>
+<table>
+<thead><tr><th>Produk</th><th>Jumlah</th><th>Subtotal</th><th></th></tr></thead>
+<tbody id="cart-body"></tbody>
+</table>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+  <div style="color:var(--muted)">Periksa kembali pesanan Anda sebelum checkout.</div>
+  <div style="text-align:right">
+    <div style="font-weight:700">Total: <span id="cart-total">Rp0</span></div>
+    <a href="checkout.html" class="btn" style="display:inline-block;margin-top:8px">Checkout</a>
+  </div>
+</div>
+
+</main>
+<footer class="site-footer container">
+  © 2025 DEFOUNDJE — Clean Look • Email: halo@defoundje.com
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

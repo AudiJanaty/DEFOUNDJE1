@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DEFOUNDJE — Clean Look</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header container">
+  <a href="index.html" class="brand">𝗗𝗘𝗙𝗢𝗨𝗡𝗗𝗝𝗘</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="orders.html">Riwayat</a>
+    <a href="cart.html">Keranjang</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+<main class="container">
+
+<h1>Checkout</h1>
+<form id="checkout-form">
+  <label>Nama Lengkap<input id="cf-name" required></label>
+  <label>Email<input id="cf-email" type="email" required></label>
+  <label>Alamat Lengkap<textarea id="cf-address" rows="4" required></textarea></label>
+  <fieldset style="margin-top:12px">
+    <legend style="font-weight:700;margin-bottom:8px">Pengiriman & Metode</legend>
+    <div class="form-row">
+      <label>Pengiriman<select><option>Reguler (3-5 hari)</option><option>Express (1-2 hari)</option></select></label>
+      <label>Pembayaran<select id="cf-pay"><option>Transfer Bank</option><option>E-Wallet</option></select></label>
+    </div>
+  </fieldset>
+  <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+    <div style="color:var(--muted)">Pastikan alamat sudah benar.</div>
+    <button type="submit" class="btn">Lanjut ke Pembayaran</button>
+  </div>
+</form>
+
+</main>
+<footer class="site-footer container">
+  © 2025 DEFOUNDJE — Clean Look • Email: halo@defoundje.com
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
